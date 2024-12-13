@@ -14,25 +14,21 @@ protocol CacheService {
 }
 
 final class CacheManager: CacheService {
-    private let cache = NSCache<NSString, NSData>()
+    private let cache: CacheService
     
-    init(
-        countLimit: Int = 100,
-        totalCostLimit: Int = 50 * 1024 * 1024 //50MB
-    ) {
-        self.cache.countLimit = countLimit
-        self.cache.totalCostLimit = totalCostLimit
+    init(cache: CacheService = UserDefaultsCacheManager()) {
+        self.cache = cache
     }
     
     func setImageCache(url: NSString, data: Data) {
-        self.cache.setObject(data.asNSData, forKey: url)
+        cache.setImageCache(url: url, data: data)
     }
     
     func retrieveImageFromCache(with url: NSString) -> Data? {
-        cache.object(forKey: url)?.asData
+        return cache.retrieveImageFromCache(with: url)
     }
     
     func clearAllCache() {
-        cache.removeAllObjects()
+        cache.clearAllCache()
     }
 }

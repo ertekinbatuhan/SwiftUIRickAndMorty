@@ -14,6 +14,7 @@ struct CharacterListView: View {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
     
+    
     var body: some View {
         NavigationView {
             contentView

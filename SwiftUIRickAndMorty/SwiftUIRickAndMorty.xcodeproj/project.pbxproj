@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0FAAEE92D0CAC7400A9B1A7 /* UserDefaultsCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FAAEE82D0CAC6D00A9B1A7 /* UserDefaultsCacheManager.swift */; };
 		EEB699F72D09CF7200EEA598 /* SwiftUIRickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB699F62D09CF7200EEA598 /* SwiftUIRickAndMortyApp.swift */; };
 		EEB699FB2D09CF7300EEA598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB699FA2D09CF7300EEA598 /* Assets.xcassets */; };
 		EEB699FE2D09CF7300EEA598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB699FD2D09CF7300EEA598 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0FAAEE82D0CAC6D00A9B1A7 /* UserDefaultsCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCacheManager.swift; sourceTree = "<group>"; };
 		EEB699F32D09CF7200EEA598 /* SwiftUIRickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIRickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB699F62D09CF7200EEA598 /* SwiftUIRickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRickAndMortyApp.swift; sourceTree = "<group>"; };
 		EEB699FA2D09CF7300EEA598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				EEB69A2A2D09D3FA00EEA598 /* CacheManager.swift */,
+				C0FAAEE82D0CAC6D00A9B1A7 /* UserDefaultsCacheManager.swift */,
 			);
 			path = CacheManager;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				EEB69A352D09DB4800EEA598 /* CharacterListView.swift in Sources */,
 				EEB69A232D09CFDF00EEA598 /* Endpoint.swift in Sources */,
 				EEB69A372D09DB6600EEA598 /* CharacterCell.swift in Sources */,
+				C0FAAEE92D0CAC7400A9B1A7 /* UserDefaultsCacheManager.swift in Sources */,
 				EEB69A392D09DB8600EEA598 /* Character.swift in Sources */,
 				EEB699F72D09CF7200EEA598 /* SwiftUIRickAndMortyApp.swift in Sources */,
 				EEB69A252D09D17F00EEA598 /* NetworkError.swift in Sources */,

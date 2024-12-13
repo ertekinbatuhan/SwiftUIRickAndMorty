@@ -1,10 +1,3 @@
-//
-//  CharacterListViewModel.swift
-//  SwiftUIRickAndMorty
-//
-//  Created by Görkem Gür on 11.12.2024.
-//
-
 import Foundation
 import Combine
 
@@ -39,7 +32,7 @@ final class CharacterListViewModel: ObservableObject {
     // MARK: - Initialization
     init(
         networkManager: NetworkService,
-        cacheManager: CacheService,
+        cacheManager: CacheService ,
         imageDownloadManager: ImageDownloadService
     ) {
         self.networkManager = networkManager
@@ -144,7 +137,7 @@ extension CharacterListViewModel {
 // MARK: - Image Cache Methods
 extension CharacterListViewModel {
     func handleImageLoading(for urlString: String) async -> Data? {
-        // Cache kontrolü
+        
         if let cachedImage = retrieveImageFromCache(urlString) {
             return cachedImage
         }
@@ -175,6 +168,4 @@ extension CharacterListViewModel {
     private func retrieveImageFromCache(_ urlString: String) -> Data? {
         return cacheManager.retrieveImageFromCache(with: urlString.asNSString)
     }
-    
 }
-
